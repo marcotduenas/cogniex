@@ -1,9 +1,14 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <v-app>
+      <v-app-bar scroll-behavior="hide">
+        <nav>
+          <router-link to="/">Home</router-link> |
+          <router-link to="/about">About</router-link> |
+          <router-link to="/login">Login</router-link>
+        </nav>
+      </v-app-bar>
+      <router-view/>
+  </v-app>
 </template>
 
 <style>
