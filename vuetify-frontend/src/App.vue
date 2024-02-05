@@ -1,13 +1,15 @@
 <template>
   <v-app>
-      <v-app-bar scroll-behavior="hide">
-        <nav>
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link> |
-          <router-link to="/login">Login</router-link>
-        </nav>
-      </v-app-bar>
-      <router-view/>
+    <v-app-bar :elevation="3">
+      <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link> |
+        <router-link to="/login">Login</router-link>
+      </nav>
+    </v-app-bar>
+    <div>
+      <router-view />
+    </div>
   </v-app>
 </template>
 
@@ -17,7 +19,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
 nav {
