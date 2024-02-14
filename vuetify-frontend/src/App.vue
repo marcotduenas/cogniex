@@ -1,15 +1,20 @@
 <template>
   <v-app>
-    <v-app-bar :elevation="3">
-      <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link> |
-        <router-link to="/login">Login</router-link>
-      </nav>
-    </v-app-bar>
-    <div>
-      <router-view />
-    </div>
+    <v-row no-gutters>
+      <v-app-bar :elevation="3">
+        <nav>
+          <router-link class="text-decoration-none" to="/">Home</router-link> |
+          <router-link class="text-decoration-none" to="/about">About</router-link> |
+          <router-link class="text-decoration-none" to="/login">Login</router-link> |
+          <router-link class="text-decoration-none" to="/register">Register</router-link>
+        </nav>
+      </v-app-bar>
+    </v-row>
+    <v-main>
+      <v-container fluid>
+        <router-view />
+      </v-container>
+    </v-main>
   </v-app>
 </template>
 
@@ -19,6 +24,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+}
+
+* {
+  overflow-y: hidden;
 }
 
 nav {

@@ -1,21 +1,38 @@
 <template>
-    <v-app>
-            <v-row no-gutters align="center" justify="center">
-                <v-col cols="8">
-                    <div>
-                        <img width="300" height="300" :aspect-ratio="1" alt="Vue logo" src="../assets/logo.png" />
-                    </div>
+    <v-row no-gutters align="center">
+        <v-col cols="8">
+            <div>
+                <img width="300" height="300" :aspect-ratio="1" alt="Vue logo" src="../assets/logo.png" />
+            </div>
+        </v-col>
+        <v-col cols="4" class="">
+            <div class=" mb-16">
+                <span class="Titles mb-1">Bem vindo a</span>
+                <br>
+                <span class="cogniex"> Cogniex</span>
+            </div>
+
+            <div class="mb-4">
+                <v-list-item>
+                    <v-text-field clearable v-model="email" label="Email" prepend-icon="mdi-email" variant="outlined"/>
+                </v-list-item>
+                <v-list-item>
+                    <v-text-field clearable v-model="password" label="Password" prepend-icon="mdi-lock" variant="outlined"/>
+                </v-list-item>
+            </div>
+            <v-row no-gutters class="mb-9">
+                <v-col align="center">
+                    <v-btn variant="elevated" color="#41b883">Entrar</v-btn>
                 </v-col>
-                <v-col cols="4" class="">
-                    <v-list-item>
-                        <v-text-field clearable label="Email" prepend-icon="mdi-email"></v-text-field>
-                    </v-list-item>
-                    <v-list-item>
-                        <v-text-field clearable label="Password" prepend-icon="mdi-lock"></v-text-field>
-                    </v-list-item>
-                </v-col>
+
             </v-row>
-    </v-app>
+
+            <div class="text-subtitle-1">Doesn't have an account?</div>
+            <router-link to="/register" class="text-decoration-none">
+                <div class="text-subtitle-1">Register now!</div>
+            </router-link>
+        </v-col>
+    </v-row>
 </template>
 
 <script>
@@ -23,13 +40,42 @@ export default {
     name: 'LoginPage',
     components: {},
     data: () => ({
+        email: '',
+        password: '',
     }),
+    methods: {
+        async logginButton() {
+            const credentials = { logEmail: this.email, logPassword: this.password }
+            await this.$store.dispatch('login', credentials)
+        }
+    }
 }
 </script>
 
 <style scoped>
-body,
-html {
-    overflow: hidden;
+.Titles {
+    font-family: "Rubik", sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    line-height: initial;
+    background: #455a64;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cogniex {
+    font-family: "Rubik", sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 600;
+    line-height: initial;
+    background: #41b883;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 </style>
