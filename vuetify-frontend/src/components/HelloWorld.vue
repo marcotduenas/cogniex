@@ -2,24 +2,22 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      A personal project developed by Marco Duenas and Eduardo Pinese<br>
+      Check out the
+      <a href="https://github.com/marcotduenas/cogniex" target="_blank" rel="noopener">GitHub Repository</a>.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Marco's social links</h3>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+      <li><a href="https://github.com/marcotduenas" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/marcotduenas/" target="_blank" rel="noopener">Linkedin</a></li>
+      <li><a href="https://www.instagram.com/marcot.duenas/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
-    <h3>Essential Links</h3>
+    <h3>Eduardo's social links</h3>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
+      <li><a href="https://github.com/MiniDudi" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://gitlab.com/duduhnpinese" target="_blank" rel="noopener">GitLab</a></li>
+      <li><a href="https://www.linkedin.com/in/eduardo-natividade-2a4870231/" target="_blank" rel="noopener">Linkedin</a></li>
+      <li><a href="https://www.instagram.com/dudi_dudiii/" target="_blank" rel="noopener">Instagram</a></li>
     </ul>
 
   </div>
@@ -48,6 +46,6 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: #b66b6b;
 }
 </style>

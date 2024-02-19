@@ -2,7 +2,7 @@
     <v-row no-gutters align="center">
         <v-col cols="8">
             <div>
-                <img width="300" height="300" :aspect-ratio="1" alt="Vue logo" src="../assets/logo.png" />
+                <img width="500" :aspect-ratio="1" alt="Vue logo" src="@/assets/register.svg" />
             </div>
         </v-col>
         <v-col cols="4" class="">
@@ -35,7 +35,7 @@
                     </router-link>
                 </v-col>
                 <v-col cols="6">
-                    <v-btn variant="elevated" color="#41b883">Enviar</v-btn>
+                    <v-btn variant="elevated" color="#b66b6b">Enviar</v-btn>
                 </v-col>
             </v-row>
         </v-col>

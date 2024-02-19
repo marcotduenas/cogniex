@@ -1,8 +1,8 @@
 <template>
   <v-row no-gutters align="center" justify="center">
     <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png">
-      <HelloWorld msg="Welcome to Your Vue.js App" />
+      <img alt="Vue logo" width="300" src="@/assets/home.svg">
+      <HelloWorld msg="Welcome to Cogniex" />
     </div>
   </v-row>
 </template>

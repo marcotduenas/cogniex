@@ -2,7 +2,7 @@
     <v-row no-gutters align="center">
         <v-col cols="8">
             <div>
-                <img width="300" height="300" :aspect-ratio="1" alt="Vue logo" src="../assets/logo.png" />
+                <img width="600" :aspect-ratio="1" alt="Vue logo" src="@/assets/home2.svg" draggable="false"/>
             </div>
         </v-col>
         <v-col cols="4" class="">
@@ -22,7 +22,7 @@
             </div>
             <v-row no-gutters class="mb-9">
                 <v-col align="center">
-                    <v-btn variant="elevated" color="#41b883">Entrar</v-btn>
+                    <v-btn variant="elevated" color="#b66b6b">Entrar</v-btn>
                 </v-col>
 
             </v-row>
@@ -73,7 +73,7 @@ export default {
     text-align: center;
     font-weight: 600;
     line-height: initial;
-    background: #41b883;
+    background: #b66b6b;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
